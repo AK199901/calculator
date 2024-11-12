@@ -1,0 +1,132 @@
+* {
+  margin: 2;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+header {
+  background-color: rgb(122, 206, 255);
+  padding: 30px 40px;
+  width: 100%;
+}
+
+h1 {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#information {
+  padding: 50px;
+  text-align: center;
+}
+
+#information img {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 75%;
+}
+
+#ommig {
+  background-color: rgb(122, 206, 255);
+  padding: 50px;
+  text-align: center;
+}
+
+#intressen {
+  padding: 90px;
+  text-align: center;
+}
+
+.intressen-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.intresse {
+  background-color: rgb(122, 206, 255);
+  border-radius: 10px;
+  width: 28%;
+}
+
+.intresse h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.intresse p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+footer p {
+  font-size: large;
+}
+.socialamedier {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button img {
+  width: 50px;
+  height: 50px;
+}
+@media (max-width: 644px) {
+  header {
+    padding: 20px;
+  }
+
+  #information {
+    padding: 30px;
+  }
+
+  .intressen-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intresse {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #information img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .intresse h3 {
+    font-size: 1.2rem;
+  }
+
+  .intresse p {
+    font-size: 0.9rem;
+  }
+}
